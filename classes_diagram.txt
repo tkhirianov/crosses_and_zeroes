@@ -1,0 +1,21 @@
+@startuml
+
+skinparam monochrome true
+
+class GameFieldView
+class ChoosePlayersManager
+class GameRoundManager
+class GameWindow
+
+class Cell
+class GameField
+class PlayerType
+class Player
+class HumanPlayer
+class AIPlayer
+
+Player <|-- HumanPlayer
+Player <|-- AIPlayer
+
+
+@enduml
