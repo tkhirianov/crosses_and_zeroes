@@ -26,16 +26,9 @@ class GameFieldView:
         return 0, 0  # TODO: реально вычислить клетку клика
 
 
-class ChoosePlayersManager:
-    """
-    Менеджер игры, запускающий все игровые процессы.
-    """
-    pass
-
-
 class GameRoundManager:
     """
-    Менеджер игры, запускающий все игровые процессы.
+    Менеджер игры, осуществляющий механику игры.
     """
 
     def __init__(self, player1: Player, player2: Player):

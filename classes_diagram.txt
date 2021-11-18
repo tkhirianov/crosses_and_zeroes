@@ -2,20 +2,25 @@
 
 skinparam monochrome true
 
-class GameFieldView
-class ChoosePlayersManager
-class GameRoundManager
 class GameWindow
+class GameRoundManager
+class GameFieldView
 
-class Cell
+GameWindow *-- GameRoundManager
+GameWindow *-- GameFieldView
+
 class GameField
-class PlayerType
+class Cell
+GameField *-- Cell
+GameRoundManager *-- GameField
+
 class Player
+GameRoundManager *-- Player : 1 - 2
+
 class HumanPlayer
 class AIPlayer
 
 Player <|-- HumanPlayer
 Player <|-- AIPlayer
-
 
 @enduml
